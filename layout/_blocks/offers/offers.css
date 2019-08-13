@@ -1,0 +1,30 @@
+@import "../offer/offer.css";
+
+.offers {
+    text-align: center;
+
+    &--indent {
+        margin-bottom: 124px;
+    }
+
+    &__content {
+        padding-left: 55px;
+        padding-right: 59px;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        padding-right: 43px;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        margin-bottom: 97px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 91px;
+    }
+}

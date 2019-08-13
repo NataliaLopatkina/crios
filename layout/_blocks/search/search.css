@@ -1,0 +1,35 @@
+.search {
+    padding-top: 57px;
+
+    &__form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+
+    &__field {
+        font-size: 16px;
+        color: #e4e6e8;
+        position: absolute;
+        right: 80px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: 0 0 65px #dae5ef;
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        transition-property: opacity, visibility, width;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+
+        &--opened {
+            opacity: 1;
+            visibility: visible;
+            width: 230px;
+            box-sizing: border-box;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "../screen-app-item/screen-app-item.css";
+
+.screen-app {
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 159px;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        content: url("../images/snowflake/snowflake-1.jpg");
+        z-index: -1;
+        top: -92px;
+        left: 46px;
+    }
+
+    &:after {
+        position: absolute;
+        content: url("../images/snowflake/snowflake-2.jpg");
+        z-index: -1;
+        right: -117px;
+        bottom: -190px;
+    }
+}

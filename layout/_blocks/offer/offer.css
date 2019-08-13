@@ -1,0 +1,16 @@
+.offer {
+    &__img {
+        margin-bottom: 33px;
+    }
+
+    &__title {
+        font-size: 18px;
+        margin-bottom: 33px;
+    }
+
+    &__text {
+        line-height: calc(24/14);
+        max-width: 229px;
+        margin: 0 auto;
+    }
+}

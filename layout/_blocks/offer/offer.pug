@@ -1,0 +1,5 @@
+mixin offer(obj)
+    div(class="offer")
+        img(class="offer__img" src="images/offers/" + obj.img + ".jpg" alt="Offer")
+        p(class="offer__title") !{obj.title}
+        p(class="text text--lighter offer__text") !{obj.text}

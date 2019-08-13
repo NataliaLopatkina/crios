@@ -1,0 +1,9 @@
+mixin text-block(obj)
+
+    - var colorTitle = ""
+    if obj.colorTitle
+        - colorTitle = " title--" + obj.colorTitle
+
+    div(class="text-block")&attributes(attributes)
+        h3(class="title text-block__title" + colorTitle) !{obj.title}
+        p(class="text text--size-m text--lighter text-block__text") !{obj.text}

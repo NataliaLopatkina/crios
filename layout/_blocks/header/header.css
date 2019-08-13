@@ -1,0 +1,16 @@
+@import "../main-nav/main-nav.css";
+@import "../main-nav/main-nav.css";
+@import "../menu/menu.css";
+@import "../button/button.css";
+@import "../button-menu/button-menu.css";
+@import "../header-logo/header-logo.css";
+@import "../search/search.css";
+
+.header {
+    background: #ffffff;
+    position: relative;
+
+    &--indent {
+        margin-bottom: 164px;
+    }
+}

@@ -1,0 +1,28 @@
+.screen-app-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 116px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &--first {
+        padding-left: 130px;
+        padding-right: 217px;
+
+        .screen-app-item__text-block {
+            padding-bottom: 42px;
+        }
+    }
+
+    &--second {
+        padding-left: 182px;
+        padding-right: 135px;
+
+        .screen-app-item__text-block {
+            padding-bottom: 18px;
+        }
+    }
+}

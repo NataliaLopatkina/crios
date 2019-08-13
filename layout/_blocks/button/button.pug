@@ -1,0 +1,7 @@
+mixin button(obj)
+    button(class="button" type="button")&attributes(attributes)
+        if obj.text
+            span(class="button__text") !{obj.text}
+        if obj.image
+            span(class="button__image")
+                img(class="button__icon" src="images/svg-icon/" + obj.image + ".svg" alt=obj.image)

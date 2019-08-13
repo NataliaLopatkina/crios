@@ -1,0 +1,17 @@
+nav(class="main-nav")
+    div(class="menu")
+        button(class="button button--circle button-menu button-menu--opened" type="button")
+            span(class="button-menu__container")
+                span(class="button-menu__icon")
+
+        include ../../_blocks/nav-menu/nav-menu.pug
+        
+    include ../../_blocks/header-logo/header-logo.pug
+
+    div(class="search")
+        form(class="search__form")
+            input(class="search__field")
+            include ../../_blocks/button/button.pug
+            +button({
+                image: "search",
+            })(class="button--circle search__button")

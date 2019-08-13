@@ -1,0 +1,40 @@
+.nav-menu {
+    position: absolute;
+    top: 130px;
+    width: 200px;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 0 35px rgba(218, 229, 239, 0.35);
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: height, opacity, visibility;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+
+    &--opened {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__list {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        list-style: none;
+    }
+
+    &__item {
+        text-align: center;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        font-size: 15px;
+        font-weight: 600;
+        color: #43a9ff;
+    }
+}

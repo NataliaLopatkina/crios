@@ -1,0 +1,33 @@
+@import "../text-block/text-block.css";
+
+.photo {
+
+    &__box {
+        display: flex;
+    }
+
+    &__image-block {
+        width: 50%;
+        height: 563px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text-block {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 110px;
+        box-sizing: border-box;
+        background: #f7f8fb;
+
+        &--second {
+            padding-left: 260px;
+        }
+    }
+}

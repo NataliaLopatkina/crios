@@ -1,0 +1,126 @@
+doctype html
+html(lang="zxx")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        title Crios
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet" href="stylesheets/common.css")
+
+    body
+
+        include ../../_blocks/header/header.pug
+        
+        main(class="main")
+            div(class="banner")
+                div(class="box")
+                    h1(class="title banner__title") Simple PSD template with cool stuff
+                    p(class="text text--size-l banner__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    a(class="button button--square banner__link" href="#5")
+                        span(class="button__text") Explore template
+
+            div(class="offers offers--indent")
+                div(class="box offers__content")
+                    p(class="text text--size-l offers__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    h2(class="title offers__title") Lorem ipsum dolor sit amet
+                    div(class="offers__list")
+                        include ../../_blocks/offer/offer.pug
+                        -
+                            var offers = [
+                                {
+                                    img: "offer-1",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.",
+                                },
+
+                                {
+                                    img: "offer-2",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.",
+                                },
+
+                                {
+                                    img: "offer-3",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.",
+                                },
+
+                                {
+                                    img: "offer-4",
+                                    title: "Lorem ipsum dolor sit amet",
+                                    text: "Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.",
+                                },
+                            ]
+
+                        each obj in offers
+                            +offer(obj)
+                
+                    a(class="button button--square offers__link" href="#5")
+                        span(class="button__text") Check our offer
+
+            div(class="photo")
+                div(class="photo__content")
+                    div(class="photo__box")
+                        div(class="photo__image-block")
+                            img(class="photo__img" src="images/photo/photo-1.jpg" srcset="images/photo/photo-1@2x.jpg 2x" alt="Photo")
+                        include ../../_blocks/text-block/text-block.pug
+                        +text-block({
+                            title: "Lorem ipsum dolor",
+                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.",
+                        })(class="photo__text-block")
+                    div(class="photo__box")
+                        +text-block({
+                            title: "Lorem ipsum dolor",
+                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.",
+                        })(class="photo__text-block photo__text-block--second")
+                        div(class="photo__image-block")
+                            img(class="photo__img" src="images/photo/photo-2.jpg" srcset="images/photo/photo-2@2x.jpg 2x" alt="Photo")
+
+            div(class="screen-app")
+                div(class="box")
+                    div(class="screen-app-item screen-app-item--first")
+                        div(class="screen-app-item__img-block")
+                            img(class="screen-app-item__img" src="images/apps/app-1.png" srcset="images/apps/app-1@2x.png 2x" alt="Screen app")
+
+                        include ../../_blocks/text-block/text-block.pug
+                        +text-block({
+                            title: "Lorem ipsum dolor",
+                            colorTitle: "blue",
+                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.",
+                        })(class="screen-app-item__text-block")
+
+                    div(class="screen-app-item screen-app-item--second")
+                        include ../../_blocks/text-block/text-block.pug
+                        +text-block({
+                            title: "Lorem ipsum dolor",
+                            colorTitle: "blue",
+                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.",
+                        })(class="screen-app-item__text-block")
+
+                        div(class="screen-app-item__img-block")
+                            img(class="screen-app-item__img" src="images/apps/app-2.png" srcset="images/apps/app-2@2x.png 2x" alt="Screen app")
+
+            div(class="ceo")
+                div(class="box ceo__content")
+                    div(class="ceo__img")
+                        img(class="ceo__photo" src="images/photo/ceo.jpg" srcset="images/photo/ceo@2x.jpg 2x" alt="Photo ceo")
+
+                    div(class="ceo__description")
+                        include ../../_blocks/text-block/text-block.pug
+                        +text-block({
+                            title: "Template is awesome",
+                            colorTitle: "red",
+                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.",
+                        })(class="ceo__text-block")
+
+                        p(class="ceo__name") John Doe
+                        p(class="text text--size-m ceo__profession") CEO at Crios.com
+
+        footer(class="footer")
+            div(class="box footer__content")
+                p(class="text text--size-l footer__text") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                h3(class="title footer__title") Lorem ipsum dolor sit amet
+                button(class="button button--square footer__button" type="button")
+                    span(class="button__text") SYMU.CO/FREEBIES
+
+        script(src="scripts/common.js")

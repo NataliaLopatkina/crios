@@ -1,0 +1,12 @@
+.text-block {
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        line-height: calc(36/16);
+        width: 504px;
+        padding-left: 6px;
+        box-sizing: border-box;
+    }
+}
